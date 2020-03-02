@@ -41,7 +41,7 @@
         <maven.compiler.version>3.5.1</maven.compiler.version>
         <mybatis.version>3.3.0</mybatis.version>
         <perf4j.version>0.9.16</perf4j.version>
-        <curator.version>2.6.0</curator.version>
+        <curator.version>4.0.1</curator.version>
         <slf4j.version>1.7.2</slf4j.version>
         <druid.version>1.0.18</druid.version>
         <jackson-databind.version>2.9.6</jackson-databind.version>
@@ -199,5 +199,45 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <name>Nexus Release Repository</name>
+            <url>http://39.100.254.140:12010/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>Nexus Snapshot Repository</name>
+            <url>http://39.100.254.140:12010/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>nexus-loit-dev</id>
+            <name>Nexus Repository</name>
+            <url>http://39.100.254.140:12010/repository/maven-public/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>nexus-loit-dev</id>
+            <name>Nexus Plugin Repository</name>
+            <url>http://39.100.254.140:12010/repository/maven-public/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
 
 </project>
