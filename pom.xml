@@ -44,7 +44,7 @@
         <curator.version>4.0.1</curator.version>
         <slf4j.version>1.7.2</slf4j.version>
         <druid.version>1.0.18</druid.version>
-        <jackson-databind.version>2.9.6</jackson-databind.version>
+        <jackson-databind.version>2.9.10</jackson-databind.version>
         <mysql-connector-java.version>5.1.38</mysql-connector-java.version>
         <commons-io.version>2.4</commons-io.version>
         <log4j.version>2.7</log4j.version>
